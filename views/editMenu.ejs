@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackFood</title>
+</head>
+<body>
+  <%- include('navbar.ejs') %>
+  <% if (error) { %>
+    <% error = error.split(',') %>
+    <% error.forEach(err => { %>
+      
+        <% }) %>
+        <% } %>
+    <div class="container">
+      <h1 style="margin-top: 30px; margin-bottom: 30px; text-align: center;">Edit Menu</h1>
+        <form class="row g-3" method="post" action="/allMenu/<%= data.id %>/edit">
+            <div class="col-md-6">
+              <label class="form-label">Item Name</label>
+              <input type="text" class="form-control" name="nameItem" value="<%= data.nameItem %>">
+              <% if (error) { %>
+                <% error.forEach(el => { %>
+                  <p style="color: red;"><%= (el.includes('name')) ? el : undefined %></p>
+                <% }) %>
+                <% } %>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Price in Rp</label>
+              <input type="number" class="form-control" name="price" value="<%= data.price %>">
+              <% if (error) { %>
+                <% error.forEach(el => { %>
+                  <p style="color: red; margin-top: 10px;"><%= (el.includes('price')) ? el : undefined %></p>
+                <% }) %>
+                <% } %>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Image URL</label>
+              <input type="text" class="form-control" name="imageURL" value="<%= data.imageUrl %>">
+              <% if (error) { %>
+                <% error.forEach(el => { %>
+                  <p style="color: red;"><%= (el.includes('image')) ? el : undefined %></p>
+                <% }) %>
+                <% } %>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Category</label>
+              <select name="CategoryId" class="form-select">
+                <option selected value="<%= data.Category.id %>"><%= data.Category.nameCat %></option>
+                <% dataCat.forEach(element => { %>
+                    <option value="<%= element.id %>"><%= element.nameCat %></option>
+                <% }) %>
+              </select>
+              <% if (error) { %>
+                <% error.forEach(el => { %>
+                  <p style="color: red;"><%= (el.includes('Category')) ? el : undefined %></p>
+                <% }) %>
+                <% } %>
+            </div>
+            <div class="form-floating">
+              <legend style="font-size: 16px;">Description</legend>
+                <textarea class="form-control" placeholder="Brief description of menu here" id="floatingTextarea" name="description"><%= data.description %></textarea>
+                <% if (error) { %>
+                    <% error.forEach(el => { %>
+                      <p style="color: red;"><%= (el.includes('description')) ? el : undefined %></p>
+                    <% }) %>
+                    <% } %>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-warning">Submit</button>
+            </div>
+            
+          </form>
+          
+    </div>
+    
+    <%- include('link.ejs') %>
+</body>
+</html>

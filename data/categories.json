@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "nameCat": "Foods",
+        "imageURL": "https://www.dapurumami.com/uploads/article_tips/perbedaan-junk-food-dan-fast-food-400.webp"
+    },
+    {
+        "id": 2,
+        "nameCat": "Drinks",
+        "imageURL": "https://demitris.com/cdn/shop/articles/image1_eb503a8a-f1e9-4bb0-ac55-fd0942ae5c95.png?v=1648496730"
+    },
+    {
+        "id": 3,
+        "nameCat": "Desserts",
+        "imageURL": "https://www.foodandwine.com/thmb/ckc6L6xKox0WfpfO6dMkuVGPQOY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Angel-Food-Cake-with-Three-Berry-Compote-FT-RECIPE0323-541a780b871441e0ab14383ee38acc44.jpg"
+    }
+]

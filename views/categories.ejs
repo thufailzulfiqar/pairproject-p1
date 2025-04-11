@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackFood</title>
+</head>
+<body style="background-image: url(https://static.vecteezy.com/system/resources/previews/015/710/948/non_2x/abstract-background-texture-art-orange-and-yellow-colors-watercolor-painting-on-canvas-with-soft-red-gradient-free-vector.jpg); background-size: cover; background-position: center; min-height: 100vh;">
+  <%- include('navbar.ejs') %>
+  <h3 class="container" style="text-align: center; margin-top: 40px;">What would you like to order?</h1>
+
+  <div class="row row-cols-1 row-cols-md-2 g-0 d-flex justify-content-center" style="margin-bottom: 10rem; margin-top: 80px;">    
+    <% data.forEach(element => { %>
+        <div class="card" style="width: 540px; margin: 10px; text-align: center;">
+            <img  style="width: 540px; height: 350px;" src="<%= element.imageURL %>" class="card-img-top" sty>
+            <div class="card-body">
+            <h5 class="card-title"><%= element.nameCat %></h5>
+            <a href="/menu/<%= element.id %>" class="btn btn-warning">See <%= element.nameCat %></a>
+            </div>
+        </div>
+    <% }) %>    
+</div>  
+</div>
+
+    <%- include('link.ejs') %>
+</body>
+</html>

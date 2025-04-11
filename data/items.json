@@ -1,0 +1,163 @@
+[
+    {
+        "nameItem" : "Sequelize Burger",
+        "description": "Our simple, classic cheeseburger begins with a 100% pure beef burger patty seasoned with just a pinch of salt and pepper.",
+        "price": 50000,
+        "imageUrl": "https://media.istockphoto.com/id/1775171327/photo/cheeseburger.jpg?s=612x612&w=0&k=20&c=58sPQY3D_99QyfJx9QWIey8kr249hQ1qO8K0nAslhPQ=",
+        "CategoryId": 1
+    },
+    {
+        "nameItem" : "Log Cola",
+        "description": "The world's favorite soft drink, a refreshing and classic cola experience",
+        "price": 20000,
+        "imageUrl": "https://www.cornico.eu/sub/cornico.sk/shop/product/pohar-750-ml-coca-cola-25-ks-330.png",
+        "CategoryId": 2
+    },
+    {
+        "nameItem" : "Async Ice Cream",
+        "description": "Our signature vanilla, made with the finest cream and a touch of pure vanilla bean for a timeless, creamy taste.",
+        "price": 15000,
+        "imageUrl": "https://www.tornado-studios.com/sites/default/files/styles/slider_full/public/products/746/gallery/ice_cream_cones_01_002_02_thumbnail_square0000.jpg?itok=7b5eNIaS",
+        "CategoryId": 3
+    },
+    {
+        "nameItem": "Find All Fries",
+        "description": "Crispy, golden-brown, and perfectly seasoned, our signature French Fries are a satisfying side dish or snack, served piping hot.",
+        "price": 35000,
+        "imageUrl": "https://img.drz.lazcdn.com/static/pk/p/5df6f362d3002c272541ab452ad2565f.jpg_720x720q80.jpg",
+        "CategoryId": 1
+      },
+      {
+        "nameItem": "Byte Burger",
+        "description": "A double-stacked beef burger with layers of cheese, representing a full stack meal for a full stack dev.",
+        "price": 55000,
+        "imageUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349",
+        "CategoryId": 1
+      },
+      {
+        "nameItem": "Null Pointer Nachos",
+        "description": "Loaded nachos with cheese, jalapeños, and secret 'null' sauce — nothing is missing here!",
+        "price": 40000,
+        "imageUrl": "https://onedishkitchen.com/wp-content/uploads/2022/02/nachos-one-dish-kitchen-square-2500.jpg",
+        "CategoryId": 1
+      },
+      {
+        "nameItem": "Syntax Spaghetti",
+        "description": "Classic Italian pasta with bolognese sauce — the cleanest code (and taste) you'll ever compile.",
+        "price": 47000,
+        "imageUrl": "https://deliciouslittlebites.com/wp-content/uploads/2021/09/Tuscan-Chicken-Spaghetti-Squash-Recipe-Image-1-3.jpg",
+        "CategoryId": 1
+      },
+      {
+        "nameItem": "Recursive Ramen",
+        "description": "Layers of umami-packed broth and tender noodles, looping back with every slurp.",
+        "price": 48000,
+        "imageUrl": "https://static01.nyt.com/images/2025/02/10/multimedia/10POTLIKKERRAMENREX-Potlikker-Ramen-gjmz/07POTLIKKERRAMENREX-Potlikker-Ramen-gjmz-mediumSquareAt3X.jpg",
+        "CategoryId": 1
+      },
+      {
+        "nameItem": "Cache Cola",
+        "description": "Fizzy, chilled soda to refresh your memory — instantly retrieved!",
+        "price": 18000,
+        "imageUrl": "https://pyxis.nymag.com/v1/imgs/be8/37a/7056e863beb0c3be28f90e2df157f9e636-24-coke.rsquare.w330.jpg",
+        "CategoryId": 2
+      },
+      {
+        "nameItem": "Boolean Boba",
+        "description": "True or False: this milk tea with tapioca pearls is your new favorite drink.",
+        "price": 25000,
+        "imageUrl": "https://www.anediblemosaic.com/wp-content/uploads//2022/03/boba-milk-tea-featured-image.jpg",
+        "CategoryId": 2
+      },
+      {
+        "nameItem": "Loop Latte",
+        "description": "Creamy espresso drink that keeps you coming back — like a never-ending loop.",
+        "price": 32000,
+        "imageUrl": "https://www.nescafe.com/id/sites/default/files/2023-04/RecipeHero_CaramelLatte_1066x1066.jpg",
+        "CategoryId": 2
+      },
+      {
+        "nameItem": "Try Catch Tea",
+        "description": "A calming blend of herbal tea designed to handle all exceptions in your day.",
+        "price": 22000,
+        "imageUrl": "https://www.teaforturmeric.com/wp-content/uploads/2021/11/Masala-Chai-Tea-Recipe-Card.jpg",
+        "CategoryId": 2
+      },
+      {
+        "nameItem": "Javascript Juice",
+        "description": "Not just for Javascript devs — a tropical fruit blend that compiles great with everything.",
+        "price": 26000,
+        "imageUrl": "https://theallnaturalvegan.com/wp-content/uploads/2023/08/mango-juice-featured-image-500x500.jpg",
+        "CategoryId": 2
+      },
+      {
+        "nameItem": "Stack Overflow Sundae",
+        "description": "A towering ice cream sundae overloaded with toppings — it may cause memory overflow.",
+        "price": 39000,
+        "imageUrl": "https://nibbleanddine.com/wp-content/uploads/2021/08/Strawberry-Sundaes-FI.jpg",
+        "CategoryId": 3
+      },
+      {
+        "nameItem": "JSON Gelato",
+        "description": "Structured, smooth, and perfectly formatted — a cool dessert for any API lover.",
+        "price": 35000,
+        "imageUrl": "https://homebodyeats.com/wp-content/uploads/2024/04/italian-fior-di-latte-gelato.jpg",
+        "CategoryId": 3
+      },
+      {
+        "nameItem": "Cookie Compiler",
+        "description": "Freshly baked cookies that pass every test — chocolate chip approved.",
+        "price": 27000,
+        "imageUrl": "https://assets.bonappetit.com/photos/5ca534485e96521ff23b382b/1:1/w_2560%2Cc_limit/chocolate-chip-cookie.jpg",
+        "CategoryId": 3
+      },
+      {
+        "nameItem": "Bit Brownie",
+        "description": "A dense, fudgy brownie with bits of code hidden in each bite — decode the flavor!",
+        "price": 30000,
+        "imageUrl": "https://img-global.cpcdn.com/recipes/3a6e2e7eb604c0a7/400x400cq70/photo.jpg",
+        "CategoryId": 3
+      },
+      {
+        "nameItem": "Dark Mode Mousse",
+        "description": "Elegant and rich dark chocolate mousse for late-night coders.",
+        "price": 32000,
+        "imageUrl": "https://sugargeekshow.com/wp-content/uploads/2023/10/easy_chocolate_cake_slice.jpg",
+        "CategoryId": 3
+      },
+      {
+        "nameItem": "Bug-Free Burrito",
+        "description": "Wrapped perfectly with no runtime errors — just beans, beef, and balance.",
+        "price": 52000,
+        "imageUrl": "https://www.tasteofhome.com/wp-content/uploads/2025/02/Sausage-Breakfast-Burrito_EXPS_TOHD24_1760_ChristineMa_10.jpg",
+        "CategoryId": 1
+      },
+      {
+        "nameItem": "Git Push Pizza",
+        "description": "Freshly baked, cheesy, and ready to deploy straight to your plate.",
+        "price": 60000,
+        "imageUrl": "https://www.hunts.com/sites/g/files/qyyrlu211/files/uploadedImages/img_6934_48664.jpg",
+        "CategoryId": 1
+      },
+      {
+        "nameItem": "DevOps Donut",
+        "description": "A sweet reward for continuous integration — glazed with success.",
+        "price": 20000,
+        "imageUrl": "https://www.cookwithnabeela.com/wp-content/uploads/2024/02/ChocolateDippedDoughnuts.webp",
+        "CategoryId": 3
+      },
+      {
+        "nameItem": "Terminal Tonic",
+        "description": "Citrusy, slightly bitter, and absolutely refreshing for your command-line sessions.",
+        "price": 24000,
+        "imageUrl": "https://image.astronauts.cloud/product-images/2024/11/Nov1_fef624f1-5707-4742-bca3-ef950b37c38b_900x900.jpg",
+        "CategoryId": 2
+      },
+      {
+        "nameItem": "Lambda Lemonade",
+        "description": "Fresh-squeezed with a functional twist, this lemonade keeps things clean and pure.",
+        "price": 23000,
+        "imageUrl": "https://breadboozebacon.com/wp-content/uploads/2023/05/Homemade-Lemonade-SQUARE-2.jpg",
+        "CategoryId": 2
+      }
+]
