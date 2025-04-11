@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackFood</title>
+</head>
+<body style="background-image: url(https://static.vecteezy.com/system/resources/previews/015/710/948/non_2x/abstract-background-texture-art-orange-and-yellow-colors-watercolor-painting-on-canvas-with-soft-red-gradient-free-vector.jpg); background-size: cover; background-position: center; min-height: 100vh;">
+    <%- include('navbar') %>
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="card" style="width: 400px; text-align: center; justify-content: center; display: flex; margin-top: 18px;">
+          <img style="width: 398px;" src="<%= qr %>" alt="QR Code">
+            <div class="card-body">
+              <h5 class="card-title">Finish Your Payment</h5>
+              <p class="card-text">Bank BCC 0101102323 an PT.HACKFOOD</p>
+              <a href="/cart/payment/finish" class="btn btn-warning">Done Payment</a>
+            </div>
+          </div>
+      </div>
+
+    <%- include('link.ejs') %>
+</body>
+</html>

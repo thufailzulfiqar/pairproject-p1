@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackFood</title>
+</head>
+<body style="background-image: url(https://static.vecteezy.com/system/resources/previews/015/710/948/non_2x/abstract-background-texture-art-orange-and-yellow-colors-watercolor-painting-on-canvas-with-soft-red-gradient-free-vector.jpg); background-size: cover; background-position: center; min-height: 100vh;">
+  <%- include('navbar') %>
+  <% if (error) { %>
+    <div class="alert alert-warning" role="alert">
+      <%= error %>
+    </div>
+  <% } %>
+
+  <% if (successLogin) { %>
+    <div class="alert alert-warning" role="alert">
+      <%= successLogin %>
+    </div>
+  <% } %>
+
+  <% if (successLogout) { %>
+    <div class="alert alert-warning" role="alert">
+      <%= successLogout %>
+    </div>
+  <% } %>
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="card" style="width: 960px; text-align: center; justify-content: center; display: flex; margin-top: 18px;">
+            <img src="https://pbs.twimg.com/media/GoFHI0RakAAGOH0?format=jpg&name=large" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Menu</h5>
+              <p class="card-text">Foods, Drinks and Desserts Available</p>
+              <a href="/menu" class="btn btn-warning">Let's Go Order!</a>
+            </div>
+          </div>
+      </div>
+
+    <%- include('link.ejs') %>
+</body>
+</html>

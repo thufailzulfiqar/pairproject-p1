@@ -1,0 +1,25 @@
+npm init -y
+npm i pg express ejs sequelize
+npm i -D nodemon sequelize-cli
+npx sequelize init
+config pada file config.json
+    "username" => "postgres",
+    "password" => "postgres",
+    "database": "sesuaikan soal",
+    "host": "localhost",
+    "dialect": "postgres"
+
+create  database => npx sequelize db:create
+
+create table => (https://sequelize.org/docs/v6/other-topics/migrations/)
+                npx sequelize-cli model:create --name Category --attributes name:string
+                npx sequelize-cli model:create --name Champion --attributes name:string,title:string,role:string,imgUrl:string,power:integer,difficult:string,category:integer
+
+additional column => `npx sequelize migration:create --name AddnewColumnToCategory`
+drop db => npx sequelize db:drop
+
+seed data => npx sequelize seed:create --name "seedCategory"
+             npx sequelize seed:create --name "seedChampion"
+1. tidak boleh seeding id
+2. wajib menambahkan property createdAt and updatedAt ditiap datanya
+

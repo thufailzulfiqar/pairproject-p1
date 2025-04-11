@@ -1,0 +1,17 @@
+[
+    {
+        "username": "Reza",
+        "phoneNumb": "081212123434",
+        "UserId": 1
+    },
+    {
+        "username": "Faishal",
+        "phoneNumb": "081212121212",
+        "UserId": 2
+    },
+    {
+        "username": "Fuad",
+        "phoneNumb": "081212122025",
+        "UserId": 3
+    }
+]

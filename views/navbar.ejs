@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg" style="background: linear-gradient(rgb(255, 0, 0), rgb(255, 115, 0));">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="font-size: 40px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: yellow;">HackFood</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/" style="color: white;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/menu" style="color: white;">Menu Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/contact" style="color: white;">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/allMenu" style="color: white;">All Menu</a>
+          </li>
+          
+          
+          
+        </ul>
+        
+          <a class="nav-link active btn btn-warning" aria-current="page" href="/cart" style="font-size: 30px; margin-left: 20px; margin-right: 20px;">🛒</a>
+        
+        <form class="d-flex" role="search"  style="align-self: center;">
+          <input name="search" class="form-control me-2" type="search" placeholder="Search Menu" aria-label="Search">
+        </form>
+       <div style=" margin-right: 10px;">
+        <% if (session.userId) { %>
+          <a href="/logout" class="btn btn-danger">Logout</a>
+        <% } else { %>
+          <a href="/login" class="btn btn-warning">Login</a>
+          <% } %>
+       </div>
+      </div>
+    </div>
+  </nav>

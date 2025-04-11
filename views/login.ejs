@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackFood</title>
+</head>
+<body style="background-image: url(https://static.vecteezy.com/system/resources/previews/015/710/948/non_2x/abstract-background-texture-art-orange-and-yellow-colors-watercolor-painting-on-canvas-with-soft-red-gradient-free-vector.jpg); background-size: cover; background-position: center; min-height: 100vh;">
+  <nav class="navbar navbar-expand-lg" style="background: linear-gradient(rgb(255, 0, 0), rgb(255, 115, 0));">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="font-size: 40px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: yellow;">HackFood</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/" style="color: white;">Home</a>
+          </li>
+        </ul>
+       <div style=" margin-right: 10px;">
+        <a href="/login" class="btn btn-warning">Login</a> <a href="/logout" class="btn btn-danger">Logout</a>
+       </div>
+      </div>
+    </div>
+  </nav>
+
+
+  
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 70vh;">
+      <div class="card shadow-lg p-4 rounded" style="width: 100%; max-width: 500px;">
+        <% if (error) { %>
+          <p style="color:red; text-align: center; margin-top: 30px; margin-bottom: 30px;">"Please login first!"</p>
+         <% } %>
+        <h1 style="text-align: center;">Login</h1>
+      <form method="post" action="/login">
+        
+          <label style="margin-top: 20px;" class="form-label">Email</label>
+          <input type="email" class="form-control" name="email">
+        
+        
+          <label style="margin-top: 20px;" class="form-label">Password</label>
+          <input type="password" class="form-control" name="password">
+        
+          
+        <div class="container d-flex justify-content-center align-items-center">
+          <button type="submit" class="btn btn-warning" style="margin-top: 40px; margin-bottom: 20px;">Login</button>
+        </div>
+      </form>
+      </div>
+    </div>
+
+    <!-- ==================================================================== -->
+
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 70vh;">
+      <div class="card shadow-lg p-4 rounded" style="width: 100%; max-width: 500px; margin-bottom: 20rem;">
+        <% if (error) { %>
+          <p style="color:red; text-align: center; margin-top: 30px; margin-bottom: 30px;">Your account does not exist, register first</p>
+         <% } %>
+         <h5 style="text-align: center;">Don't have an account?</h5>
+        <h1 style="text-align: center;">Register</h1>
+      <form method="post" action="/register">
+
+          <label style="margin-top: 20px;" class="form-label">Username</label>
+          <input type="text" class="form-control" name="username">
+
+          <label style="margin-top: 20px;" class="form-label">Phone Number</label>
+          <input type="number" class="form-control" name="phoneNumb">
+        
+        
+          <label style="margin-top: 20px;" class="form-label">Email</label>
+          <input type="email" class="form-control" name="email">
+
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Role</label>
+            <select name="role" id="inputState" class="form-select">
+              <option value="customer" selected>Customer</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+        
+        
+          <label style="margin-top: 20px;" class="form-label">Password</label>
+          <input type="password" class="form-control" name="password">
+        
+          
+        <div class="container d-flex justify-content-center align-items-center">
+          
+          <button type="submit" class="btn btn-warning" style="margin-top: 40px; margin-bottom: 60px;">Register</button>
+        </div>
+      </form>
+      </div>
+    </div>
+
+      <%- include('link.ejs') %>
+</body>
+</html>
